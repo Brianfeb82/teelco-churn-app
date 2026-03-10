@@ -35,8 +35,8 @@ st.markdown("""
 # --- LOAD MODEL & SCALER ---
 @st.cache_resource
 def load_assets():
-    model = pickle.load(open('model_churn.pkl', 'rb'))
-    scaler = pickle.load(open('scaler.pkl', 'rb'))
+    model = pickle.load(open('model_churn_v2.pkl', 'rb'))
+    scaler = pickle.load(open('scaler_v2.pkl', 'rb'))
     return model, scaler
 
 try:
